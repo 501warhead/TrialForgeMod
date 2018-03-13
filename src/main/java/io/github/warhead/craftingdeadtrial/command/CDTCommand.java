@@ -66,7 +66,7 @@ public class CDTCommand extends CommandBase {
         //Cast sender to player for commands
         EntityPlayerMP pl = (EntityPlayerMP) sender;
         if (args.length == 0) {
-            //TODO print help
+            sendHelp(sender);
             return;
         }
         //Commands
@@ -100,7 +100,21 @@ public class CDTCommand extends CommandBase {
             pl.sendChatToPlayer(ChatMessageComponent.createFromText(String.format("Current Energy: %d, Max Energy: %d",
                     handler.getCurrentEnergy(),
                     handler.getMaxEnergy())));
+        } else {
+            sendHelp(sender);
         }
+    }
+
+    /**
+     * I need it.
+     *
+     * @param sender The sender to send help to
+     */
+    private void sendHelp(ICommandSender sender) {
+        sender.sendChatToPlayer(ChatMessageComponent.createFromText("~~~ CD Trial Plugin ~~~\n" +
+                "/cdt energy: Print out current energy levels\n" +
+                "/cdt thirst: Print out current thirst levels\n" +
+                "/cdt thirst <#>: Set your current thirst to the provided number, between 0 and 20"));
     }
 
     @Override
