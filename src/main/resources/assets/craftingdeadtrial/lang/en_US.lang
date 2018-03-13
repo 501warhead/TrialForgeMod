@@ -1,0 +1,9 @@
+#Items
+item.craftingdeadtrial:waterBottle.name=Water Bottle
+item.craftingdeadtrial:woodBottle.name=Wood Cup
+
+#Blocks
+tile.craftingdeadtrial:blockPunchingBag.name=Punching Bag
+
+#Creative Tab
+itemGroup.CraftingDeadTrial=Crafting Dead Trial

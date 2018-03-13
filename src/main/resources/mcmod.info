@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "craftingdeadtrial",
+    "name": "Crafting Dead Trial",
+    "description": "A Trial Mod to showcase individual capabilities",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authors": [
+      "501warhead"
+    ],
+    "credits": "Lewis and SysOps for assistance in making this trail",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
